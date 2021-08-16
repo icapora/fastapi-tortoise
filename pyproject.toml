@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "fastapi-tortoise-template"
+version = "0.1.0"
+description = ""
+authors = ["Isaias Caporusso <isaias.caporusso@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.68.0"
+tortoise-orm = {extras = ["asyncpg"], version = "^0.17.6"}
+uvicorn = "^0.14.0"
+aerich = "^0.5.5"
+pydantic = {extras = ["email"], version = "^1.8.2"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.5"
+pytest = "^6.2.4"
+fastapi-pagination = {extras = ["tortoise"], version = "^0.8.3"}
+requests = "^2.26.0"
+pytest-asyncio = "^0.15.1"
+
+[tool.poetry.dev-dependencies]
+tortoise-cli = "^0.1.1"
+isort = "^5.9.3"
+black = "^21.7b0"
+mypy = "^0.910"
+pytest-cov = "^2.12.1"
+flake8 = "^3.9.2"
+commitizen = "^2.18.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
